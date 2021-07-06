@@ -4,8 +4,11 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+
+@foreach ($mensajes as $dato)
             <div class="card">
-                <div class="card-header">Dashboard</div>
+
+                <div class="card-header">Mensaje de {{$dato->nombre}}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,9 +17,12 @@
                         </div>
                     @endif
 
-                    Hola estas en mi Aplicacion Freezer Idiota!!!!
+                    {{$dato->texto}}
                 </div>
             </div>
+
+@endforeach
+
         </div>
     </div>
 </div>
