@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/contacto', 'ContactoController@index')->name('index');
 Route::resource('/contacto', 'ContactoController');
 Route::resource('/calculadora', 'CalculadoraController');
-Route::get('/calculadora', 'CalculadoraController@index')->name('calculadora');
+Route::get('/calculadora', 'CalculadoraController@index')->name('index');
 
 
 
