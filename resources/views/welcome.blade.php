@@ -9,40 +9,54 @@
 </head>
 
 <body>
-    <div class="text-center " style=" display:flex; justify-content:center;">
-    <p style="float: left "><img src="img/02.jpg" class="rounded-pill" alt="..." View width="400" View height="400">Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion.
+  <div class="text-center" style=" display:flex; justify-content:center;">
+    <img src="img/02.jpg" class="rounded-pill" alt="..." View width="400" View height="400">
+    <p class="p-3 mb-2 bg-primary text-white text-wrap fw-bold" style="float: left; width: 45rem;">
+      Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion. <br>
+      Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion. <br>
+      Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion. <br>
+      Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion. <br>
+      Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion. <br>
+      Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion. <br>
     </p>
   </div>
   <div class="text-center" style="display:flex; justify-content:center;">
     <figure class="figure">
       <img src="img/01.jpg" class="figure-img img-fluid rounded" alt="..." width="1000" height="1000">
-      <figcaption class="figure-caption p-3 mb-2 bg-primary text-white">Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion.</figcaption>
+      <figcaption class="figure-caption p-3 mb-2 bg-primary text-white fw-bold text-wrap" style="width: 63rem;">
+        Estudiante de HTML,CSS y JavaScript.<br>
+        Ancioso de Aprender mas Idiomas<br>
+        Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion. <br>
+        Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion. <br>
+        Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion. <br>
+        Mi Nombre es Jonathan Damian Amoros y soy un Estudiante de programacion. <br>
+
+      </figcaption>
     </figure>
   </div>
-  <br>
   <div class="text-center" style="display:flex; justify-content:center;">
     <div style="margin-left:15px">
       <img src="https://escuelafintech.com/wp-content/uploads/estudiar-programacion.jpg" class="img-thumbnail" alt="..." View width="300" View height="150">
       <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Programacion</button>
+        <button class="btn btn-primary fw-bold" type="button">Programacion</button>
       </div>
     </div>
     <div style="margin-left:15px">
       <img src="https://escuelafintech.com/wp-content/uploads/estudiar-programacion.jpg" class="img-thumbnail" alt="..." width="300" height="150">
       <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Desarrollo Web</button>
+        <button class="btn btn-primary fw-bold" type="button">Desarrollo Web</button>
       </div>
     </div>
     <div style="margin-left:15px">
       <img src="https://escuelafintech.com/wp-content/uploads/estudiar-programacion.jpg" class="img-thumbnail" alt="..." width="300" height="150">
       <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Anime</button>
+        <button class="btn btn-primary fw-bold" type="button">Anime</button>
       </div>
     </div>
     <div style="margin-left:15px">
       <img src="https://escuelafintech.com/wp-content/uploads/estudiar-programacion.jpg" class="img-thumbnail" alt="..." width="300" height="150">
       <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Video Games</button>
+        <button class="btn btn-primary fw-bold" type="button">Video Games</button>
       </div>
     </div>
   </div>
