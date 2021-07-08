@@ -3,19 +3,37 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Contacto;
-use Redirect;
-class ContactoController extends Controller
+
+class CalculadoraControler extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //la ruta contacto va a unir ContactoController con Vista Contacto se //muestra la vista
-        return view('contacto'); 
+        //  dd($request->operador);
+        $solucion = "0";
+         // return view('calculadora' , ['solucion'=>$solucion]);
+         // $dato = $request;
+         // return "Hola";
+         // 
+         if($request->operador == "+"){
+            $solucion = $request->dato1 + $request->dato2;
+            return view('calculadora' , ['solucion'=>$solucion]);
+         }else if($request->operador == "-"){
+            $solucion = $request->dato1 - $request->dato2;
+            return view('calculadora' , ['solucion'=>$solucion]);
+         }else if($request->operador == "x"){
+            $solucion = $request->dato1 + $request->dato2;
+            return view('calculadora' , ['solucion'=>$solucion]);
+         }else{
+            $solucion = $request->dato1 - $request->dato2;
+            return view('calculadora' , ['solucion'=>$solucion]);
+         }
+         return view('calculadora' , ['solucion'=>$solucion]);
+        
     }
 
     /**
@@ -37,14 +55,6 @@ class ContactoController extends Controller
     public function store(Request $request)
     {
         //
-        //dd($request);
-        $contacto = new Contacto; 
-        $contacto->nombre = $request->input('nombre');
-        $contacto->email = $request->input('email');
-        $contacto->texto = $request->input('mensaje');
-        $contacto->save();
-        return Redirect::to('/');
-
     }
 
     /**

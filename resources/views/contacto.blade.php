@@ -22,9 +22,8 @@
       <input type="text" class="form-control" name="mensaje" id="exampleInputPassword1">
     </div>
     <button type="submit" onclick="document.getElementByid('contactoform').submit();" class="btn btn-primary">Submit</button>
+
 </form>
-      </div>
-    </div>
      </div>
         </div>
         @endsection      
